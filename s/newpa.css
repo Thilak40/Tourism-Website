@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background: url(../i/log.jpg);
+    background-size: cover;
+    background-position: top;
+}
+.main {
+    width: 320px;
+    height: 420px;
+    background: #000;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+}
+.logim{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+}
+h1{
+    margin-top: 60px;
+    text-align: center;
+    font-size: 22px;
+}
+.main p{
+    font-weight: bold;
+}
+.use{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    color: #fff;
+    font-size: 16px;
+    height: 40px;
+    width: 90%;
+}
+.login{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #fb2525;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+    width: 90%;
+    font-weight: 700;
+}
+.login:hover{
+    cursor: pointer;
+    background: aqua;
+    transition: 0.5s ease;
+    color: #000;
+}
+
+form {
+    margin: 15px 0 20px 25px;
+}
+
+input:focus {
+    border-color: aqua;
+}

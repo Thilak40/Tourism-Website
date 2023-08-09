@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+
+body {
+    scroll-behavior: smooth;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../I/fernando-alvarez-rodriguez-M7GddPqJowg-unsplash.jpg);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin-bottom: 50px;
+}
+
+.header {
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    /* -webkit-box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 5px 2px rgba(236, 228, 228, 0.75); */
+    position: sticky;
+    top: 0;
+    display: flex;
+    z-index: 999;
+}
+
+.title {
+    margin-left: 20px;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 19px;
+    color: aqua;
+    font-weight: bolder;
+}
+
+.nav-bar-1 {
+    margin-top: 4px;
+    margin-left: 5em;
+}
+
+.nav-bar-1 ul {
+    display: flex;
+}
+
+.nav-bar-1 ul li {
+    color: white;
+    padding: 10px;
+    list-style-type: none;
+    font-weight: 600;
+}
+
+.icon-logo {
+    margin-right: 5px;
+    font-size: 22px;
+}
+
+.contents {
+    background: url('../i/tour.jpg');
+    background-position: middle;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+
+.login {
+    margin: auto 15px auto auto;
+    color: #fff;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.pr-logo {
+    margin-top: 6px;
+    margin-right: 5px;
+    font-size: 22px;
+}
+
+.packages-sub-menu {
+    margin: 10px;
+    display: none;
+    border: 1px solid #fff;
+    position: absolute;
+    left: 290px;
+    background: #000;
+    z-index: 999;
+}
+
+.packages-sub-menu ul li {
+    padding: 15px;
+    list-style-type: none;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.packages-sub-menu ul li:hover {
+    background: #fff;
+    color: #000;
+}
+
+.home-contents .text-container .img img {
+    height: 550px;
+    width: auto;
+    margin-top: -50px;
+    margin-left: 100px;
+}
+
+.home-contents .cards {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    margin-left: 70px;
+}
+
+.home-contents .cards .card {
+    padding: 20px 10px 10px 10px;
+    text-align: center;
+    color: #fff;
+    border: 1px solid aqua;
+    border-radius: 8px;
+    background: #000;
+    width: 200px;
+    height: max-content;
+    margin-left: 45px;
+}
+
+.home-contents .cards .card button {
+    background: #fff;
+    color: #000;
+    width: 170px;
+    font-size: 17px;
+    padding: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.5s ease all;
+}
+
+.home-contents .cards .card button:hover {
+    color: #e8e8e8;
+    background: #000;
+    border: 1px solid #fff;
+}
+
+
+/* Pack Card design  */
+
+
+.feature-box {
+    background: #fff;
+    width: 350px;
+    height: max-content;
+    margin-left: 40px;
+    position: relative;
+}
+
+.feature-img {
+    width: 350px;
+    height: 200px;
+}
+
+.feature-img img {
+    width: 350px;
+    height: 200px;
+}
+
+.feature-details .fa {
+    font-size: 15px;
+    color: #ff5722
+}
+
+.feature-details .fas {
+    font-size: 15px;
+    color: #ff5722
+}
+
+.feature-details {
+    padding: 20px;
+    text-align: justify;
+}
+
+.feature-details h4 {
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.feature-details .des {
+    margin-right: 5px;
+    padding: 5px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.feature-box {
+    box-shadow: 0 0 2px 1px #fff;
+    margin-bottom: 30px;
+}
+
+.price {
+    height: 40px;
+    background: #ff5722;
+    color: #fff;
+    font-weight: 500;
+    padding: 8px;
+    box-shadow: 0 0 10px 1px rgba(37, 73, 214, 0.18);
+    position: absolute;
+    left: 20px;
+    top: 230px;
+    bottom: 0px;
+    margin-top: -50px;
+}
+
+.pc-edit {
+    box-shadow: 0 0 10px 1px rgba(37, 73, 214, 0.18);
+    position: absolute;
+    right: 20px;
+    top: 230px;
+    bottom: 0px;
+    margin-top: -50px;
+    display: flex;
+    height: 40px;
+}
+
+.pc-edit button {
+    border: none;
+    outline: none;
+    font-size: 18px;
+    background: #ff5722;
+    color: #fff;
+    font-weight: 500;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.lout-opt {
+    margin: 10px;
+    visibility: hidden;
+    border: 1px solid #fff;
+    position: absolute;
+    right: 0;
+    top: 45px;
+    background: #000;
+    z-index: 999;
+}
+
+.lout-opt ul li {
+    padding: 8px;
+    list-style-type: none;
+    color: red;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.lout-opt ul li a{
+    color: red;
+}
+
+.lout-opt ul li:hover {
+    background: #fff;
+}
+
+#agent {
+    font-weight: 600;
+}
+
+#land {
+    padding: 8px;
+    background: #ff5722;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    display: block;
+    float: right;
+    border-radius: 15px;
+    margin-top: -30px;
+}
+
+/* Search bar  */
+
+.search input {
+    background: transparent;
+    border: none;
+    outline: none;
+    width: 80vh;
+    color: #fff;
+    font-size: 16px;
+}
+
+.search button {
+    padding: 10px;
+    background: #ff5722;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.search button i {
+    color: #fff;
+}
+
+.search {
+    border: 2px solid #ff5722;
+    width: max-content;
+    border-left: 8px solid #ff5722;
+    margin: auto;
+    margin-top: 30px;
+}
+.search i {
+    color: grey;
+    padding-left: 10px;
+    padding-right: 5px;
+}

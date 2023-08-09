@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+
+body {
+    scroll-behavior: smooth;
+    position: relative;
+    z-index: 10;
+}
+
+.header {
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    display: flex;
+}
+
+.title {
+    margin-left: 20px;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 19px;
+    color: aqua;
+    font-weight: bolder;
+}
+
+.nav-bar-1 {
+    margin-top: 4px;
+    margin-left: 5em;
+}
+
+.nav-bar-1 ul {
+    display: flex;
+}
+
+.nav-bar-1 ul li {
+    color: white;
+    padding: 10px;
+    list-style-type: none;
+    font-weight: 600;
+}
+
+.icon-logo {
+    margin-right: 5px;
+    font-size: 22px;
+}
+
+.contents {
+    background: url('../i/tour.jpg');
+    background-position: middle;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    text-align: center;
+    color: #fff;
+}
+
+.login {
+    margin-top: auto;
+    margin-bottom: auto;
+    color: black;
+    margin-left: auto;
+    margin-right: 15px;
+    font-weight: 700;
+    font-size: 20px;
+    background-color: aqua;
+    padding-left: 6px;
+    padding-right: 6px;
+    border-radius: 50px;
+}
+
+.login a {
+    color: #000;
+}
+.content{
+    margin-top: 30px;
+}
+.ab{
+    margin-top: 50px;
+    padding-left: 120px;
+    padding-right: 120px;
+
+}
+.head{
+    margin-top: 100px;
+}
+
+.sec1 img{
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    margin-left: 250px;
+    margin-top: 50px;
+}
+.img{
+    display: flex;
+}
+.tex1{
+    margin-top: 80px;
+    margin-left: 200px;
+    max-width: 500px;
+}
+.tex1 h3{
+    padding-left: 200px;
+}
+.tex1 p{
+    padding-top: 20px;
+    padding-left: 80px;
+    padding-right: 50px;
+}
+.sec2 img{
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    margin-right: 250px;
+    margin-top: 50px;
+    margin-left: 200px;
+}
+.img1{
+    display: flex;
+    margin-top: 60px;
+}
+.tex2{
+    margin-top: 80px;
+    margin-left: 100px;
+    max-width: 500px;
+}
+.tex2 h3{
+    padding-left: 200px;
+}
+.tex2 p{
+    padding-top: 20px;
+    padding-left: 100px;
+    padding-right: 50px;
+}
+.sec3 img{
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    margin-left: 250px;
+    margin-top: 50px;
+}
+.img2{
+    display: flex;
+    margin-top: 60px;
+}
+.tex3{
+    margin-top: 80px;
+    margin-left: 200px;
+    max-width: 500px;
+}
+.tex3 h3{
+    padding-left: 200px;
+}
+.tex3 p{
+    padding-top: 20px;
+    padding-left: 80px;
+    padding-right: 50px;
+}

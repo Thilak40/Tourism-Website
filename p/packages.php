@@ -1,0 +1,40 @@
+<?php
+$agentname=$_COOKIE['user'];
+$state=$_POST['state'];
+$days=$_POST['days'];
+$nights=$_POST['nights'];
+$places=$_POST['places'];
+$price=$_POST['price'];
+$v=0;
+$u=0;
+$key=array_keys($_POST);
+foreach($key as $i){
+    if("foodava"==$i){
+        $v=1;
+    }
+    if("hotelava"==$i){
+        $u=1;
+    }
+    
+}
+$foodava="";
+$hotelava="";
+if($v==1){
+$foodava=$_POST['foodava'];
+}
+else{
+    $foodava="no";
+}
+if($u==1){
+$hotelava=$_POST['hotelava'];
+}
+else{
+    $hotelava="no";
+}
+$con=mysqli_connect('localhost','root',"",'miniproj');
+$q="INSERT INTO agentpackage (agentname,state,days,nights,places,foodava,hotelava,price) VALUES ('$agentname','$state','$days','$nights','$places','$foodava','$hotelava','$price');";
+mysqli_query($con,$q);
+?>
+<script>
+    window.location.href="dashboard.php";
+</script>

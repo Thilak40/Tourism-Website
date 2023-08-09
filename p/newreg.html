@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../s/newreg.css" type="text/css">
+    <title>New Registration</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="heading">Registration</div>
+        <form action="create.php" method="post" autocomplete="off">
+            <div class="card-details">
+                <div class="card-box">
+                    <span class="details">Full name</span>
+                    <input type="text" name="name" placeholder="Enter your name" required>
+                </div>
+                <div class="card-box">
+                    <span class="details">Username</span>
+                    <input type="text" name="username" placeholder="Enter username" required>
+                </div>
+                <div class="card-box">
+                    <span class="details">E-mail</span>
+                    <input type="email" name="mail" placeholder="Enter E-mail" required>
+                </div>
+                <div class="card-box">
+                    <span class="details">Phone number</span>
+                    <input type="phone" name="phno" placeholder="Enter phone number " required>
+                </div>
+                <div class="card-box">
+                    <span class="details">Password</span>
+                    <input type="password" name="pass" placeholder="Enter password" required id="pass">
+                </div>
+                <div class="card-box">
+                    <span class="details">Confirm password</span>
+                    <input type="password" name="conpass" placeholder="Enter confirm password" required id="cpass">
+                </div>
+            </div>
+            <div class="crical-form">
+                <span class="crical-title">Gender</span>
+                <div class="category">
+                    <input type="radio" name="gender" value="male" required>&nbsp&nbspMale &nbsp;&nbsp;
+                    <input type="radio" name="gender" value="female" required>&nbsp&nbspFemale
+                </div>
+                <input type="radio" name="login-type" value="user-login" id="ulradio" checked required>&nbsp;&nbsp;&nbsp;
+                <label for="ulradio">Tourist</label>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="radio" name="login-type" value="agent-login" id="alradio" required>&nbsp;&nbsp;&nbsp;
+                <label for="alradio">Agent</label><br><br>
+            </div>
+            <div class="button">
+                <input type="submit" name="submit" value="Submit" id="submit">
+            </div>
+        </form>
+
+        <script>
+            document.getElementById("submit").onclick = () => {
+            var x=document.getElementById("pass").value;
+            var y=document.getElementById("cpass").value;
+            if (x != y) {
+                alert("Password and Confirm Password doesnot match");
+                return false;
+            }
+            else {
+                return true;
+            }
+        
+        }
+        </script>
+    </div>
+</body>
+
+</html>
